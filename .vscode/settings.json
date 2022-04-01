@@ -3,5 +3,6 @@
         "information",
         
         "only-default-namespace"
-    ]
+    ],
+    "datapack.env.jsonVersion": "1.19"
 }

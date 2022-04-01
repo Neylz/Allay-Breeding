@@ -21,6 +21,6 @@ tag @e[type=bee,tag=abr_process] remove abr_process
 
 #kill originals
 execute as @e[type=minecraft:allay,tag=abr_breederInRangeSelected,tag=!abr_processAllay1] run tp ~ -1000 ~
-execute as @e[type=minecraft:allay,tag=abr_breederInRangeSelected,tag=!abr_processAllay1] run kill @s
+#execute as @e[type=minecraft:allay,tag=abr_breederInRangeSelected,tag=!abr_processAllay1] run kill @s
 tp @s ~ -1000 ~
-kill @s
+#kill @s
