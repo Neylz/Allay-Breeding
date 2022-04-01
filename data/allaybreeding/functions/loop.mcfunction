@@ -2,8 +2,8 @@
 
 
 #region allay check hands
-execute as @e[type=minecraft:allay,tag=abr_breeder,nbt=!{HandItems:[{id:"minecraft:glow_berries",Count:1b},{}]}] run tag @s remove abr_breeder
-execute as @e[type=minecraft:allay,tag=!abr_breeder,nbt={HandItems:[{id:"minecraft:glow_berries",Count:1b},{}]}] run tag @s add abr_breeder
+execute as @e[type=minecraft:allay,tag=abr_breeder,nbt=!{HandItems:[{id:"minecraft:cookie",Count:1b},{}]}] run tag @s remove abr_breeder
+execute as @e[type=minecraft:allay,tag=!abr_breeder,nbt={HandItems:[{id:"minecraft:cookie",Count:1b},{}]}] run tag @s add abr_breeder
 #endregion
 
 
