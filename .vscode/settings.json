@@ -1,0 +1,7 @@
+{
+    "datapack.lint.strictEntityTypeCheck": [
+        "information",
+        
+        "only-default-namespace"
+    ]
+}
