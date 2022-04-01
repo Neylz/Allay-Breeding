@@ -1,2 +1,3 @@
-data modify entity @s Passengers[0].Tags set value []
+summon minecraft:allay ~ ~ ~
+tp @s ~ -1000 ~
 kill @s
