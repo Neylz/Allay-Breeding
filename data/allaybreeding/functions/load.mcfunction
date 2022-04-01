@@ -2,9 +2,9 @@
 
 #call from load
 
+scoreboard objectives add abr_data dummy
 
-
-#couples scoreboard
+#bees mounted scoreboard
 scoreboard objectives add abr_onBees dummy
 
 
