@@ -1,13 +1,12 @@
 #alias entity allay minecraft:allay
-#define score_holder $uniqueId abr_couples 
 
 #call from load
 
 
 
 #couples scoreboard
-scoreboard objectives add abr_couples dummy
-execute unless score $uniqueId abr_couples matches -1.. run scoreboard players set $uniqueId abr_couples 0 
+scoreboard objectives add abr_onBees dummy
+
 
 
 function allaybreeding:loop

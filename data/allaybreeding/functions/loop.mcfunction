@@ -10,10 +10,10 @@ execute as @e[type=minecraft:allay,tag=!abr_breeder,nbt={HandItems:[{id:"minecra
 
 
 #region detect breeding situation 
-## detect 2 allays (in a range of 20)
-execute as @e[type=minecraft:allay,tag=abr_breeder] at @s if entity @e[type=minecraft:allay,tag=abr_breeder,distance=0.01..20] run tag @s add abr_breederInRange
+## detect 2 allays (in a range of 10)
+execute as @e[type=minecraft:allay,tag=abr_breeder] at @s if entity @e[type=minecraft:allay,tag=abr_breeder,distance=0.01..10] run tag @s add abr_breederInRange
 execute as @e[type=allay,tag=abr_breederInRange,limit=1] run tag @s add abr_breederInRangeSelected
-execute as @e[type=minecraft:allay,tag=abr_breederInRangeSelected] at @s run tag @e[type=minecraft:allay,tag=abr_breederInRange,distance=0.01..20,limit=1] add abr_breederInRangeSelected
+execute as @e[type=minecraft:allay,tag=abr_breederInRangeSelected] at @s run tag @e[type=minecraft:allay,tag=abr_breederInRange,distance=0.01..10,limit=1] add abr_breederInRangeSelected
 
 ## mark them as a couple
 execute as @e[type=minecraft:allay,tag=abr_breederInRangeSelected,limit=1] at @s run function allaybreeding:process/newcouple
